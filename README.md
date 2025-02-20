@@ -14,8 +14,8 @@ The **Event Management API** is a RESTful service built with Django REST Framewo
 
 ### 1. Clone the Repository
 ```sh
-$ git clone https://github.com/your-repo/event-management-api.git
-$ cd event-management-api
+$ git clone [https://github.com/your-repo/event-management-api.git](https://github.com/sonawale29/EventManagement.git)
+$ cd EventAPI
 ```
 
 ### 2. Create & Activate Virtual Environment
@@ -32,9 +32,11 @@ $ pip install -r requirements.txt
 ### 4. Configure Environment Variables
 Create a `.env` file in the root directory and set up your database credentials:
 ```
-SECRET_KEY=your_secret_key
-DEBUG=True
-DATABASE_URL=sqlite:///db.sqlite3  # Use PostgreSQL for production
+DB_NAME='database_name'
+DB_USER='user'
+DB_PASSWORD='your-password'
+DB_HOST='localhost'
+DB_PORT='3306'
 ```
 
 ### 5. Apply Migrations & Create Superuser
